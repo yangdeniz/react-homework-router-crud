@@ -1,0 +1,145 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.post-container {
+  position: relative;
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.post-container h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-container a,
+.btn-container button {
+  margin-left: 10px;
+}
+
+.post-btn {
+  height: 30px;
+  padding: 0 20px;
+  background-color: rgb(0, 84, 145);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.post-btn--danger {
+  background-color: rgb(147, 0, 0);
+}
+
+.post-btn:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.post-input {
+  margin: 25px 0 10px 0;
+}
+
+.post-input textarea {
+  width: 900px;
+  height: 100px;
+  resize: none;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  outline: none;
+  overflow: hidden;
+}
+
+.close,
+.open {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close {
+  width: 15px;
+  height: 15px;
+}
+
+.close::before,
+.close::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 19px;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.close::before {
+  left: 0;
+  transform: rotate(-45deg);
+  transform-origin: top;
+}
+
+.close::after {
+  right: 0;
+  transform: rotate(45deg);
+  transform-origin: top;
+}
+
+.open {
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.post-content {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.post-actions button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+}
